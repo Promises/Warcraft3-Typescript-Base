@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "windows": {
+                "command": "cmd.exe /C Windows-Build.bat"
+            },
+            "osx": {
+                "command": "./Unix-Build.sh"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "build-test",
+            "type": "shell",
+            "windows": {
+                "command": "cmd.exe /C Windows-Build-And-Run.bat"
+            },
+            "osx": {
+                "command": "./Unix-Build-And-Run.sh"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}

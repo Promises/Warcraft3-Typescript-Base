@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			".vscode": true,
+			"maps": true,
+			"node_modules": true,
+			"src": true,
+			"target": true,
+			"tools": true,
+			"build.bat": true,
+			"build-test.bat": true,
+			"ceres.toml": true,
+			"clean.bat": true,
+			"package.json": true,
+			"tsconfig.json": true,
+			"package-lock.json": true,
+			"settings-base.bat": true,
+			"settings-base.sh": true,
+			"clean.sh": true,
+			"build.sh": true,
+			"*.code-workspace": true,
+		},
+	}
+}

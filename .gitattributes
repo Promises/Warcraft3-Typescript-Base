@@ -1,0 +1,6 @@
+*.wts text eol=crlf
+*.slk text eol=crlf
+
+*.j text eol=crlf
+./mapfiles/* text eol=crlf
+./scripts/* text eol=lf
