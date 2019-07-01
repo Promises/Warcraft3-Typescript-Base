@@ -13,6 +13,7 @@
   "author": "Nikolaj \"William\" Mariager",
   "license": "MIT",
   "dependencies": {
+    "busted-tstl": "0.0.6",
     "codelyzer": "^5.1.0",
     "convertjasstots": "^1.0.5",
     "lua-types": "^2.5.0",

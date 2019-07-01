@@ -61,8 +61,8 @@ if [ "$bt_alwaysgeneratedefinitions" = true ]; then
 fi
 
 echo "Converting TypeScript to Lua ..."
-node node_modules/typescript-to-lua/dist/tstl.js  -p tsconfig.json
-mv src/app/src/main.lua src/
+node node_modules/typescript-to-lua/dist/tstl.js  -p tsconfig.json --noHoisting
+cp src/app/src/main.lua src/
 
  ./tools/ceres/ceres
 
@@ -87,3 +87,4 @@ if [ $status -ne 0 ]; then
     echo "FAILED!" 
     exit 1
 fi
+
