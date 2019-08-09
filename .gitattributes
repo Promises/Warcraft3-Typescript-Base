@@ -1,7 +1,1 @@
-*.wts text eol=crlf
-*.slk text eol=crlf
-
-*.j text eol=crlf
 *.j linguist-language=TypeScript
-./mapfiles/* text eol=crlf
-./scripts/* text eol=lf
