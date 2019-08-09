@@ -7,10 +7,10 @@
             "label": "build",
             "type": "shell",
             "windows": {
-                "command": "cmd.exe /C Windows-Build.bat"
+                "command": "node --build"
             },
             "osx": {
-                "command": "./Unix-Build.sh"
+                "command": "node --build"
             },
             "group": {
                 "kind": "test",
@@ -22,10 +22,10 @@
             "label": "build-test",
             "type": "shell",
             "windows": {
-                "command": "cmd.exe /C Windows-Build-And-Run.bat"
+                "command": "node --build --run"
             },
             "osx": {
-                "command": "./Unix-Build-And-Run.sh"
+                "command": "node --build --run"
             },
             "group": {
                 "kind": "build",
