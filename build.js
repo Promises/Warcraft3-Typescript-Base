@@ -83,7 +83,7 @@ class Build {
         let sharedArgs = `extract "target/${map}" "war3map.lua" "maps/map"`;
         let mpqEditor = '';
         if (this.os === "win32") {
-            mpqEditor = '"tools/MPQEditor/x64/MPQEditor.exe"';
+            mpqEditor = 'tools/MPQEditor/x64/MPQEditor.exe';
         } else {
             mpqEditor = "WINEDEBUG=-all wine64 tools/MPQEditor/x64/MPQEditor.exe";
         }
@@ -109,7 +109,7 @@ class Build {
         let ceres = '';
         switch (this.os) {
             case "win32":
-                ceres = '"tools/ceres/ceres.exe"';
+                ceres = 'tools/ceres/ceres.exe';
                 break;
             case "darwin":
                 ceres = "tools/ceres/ceres";
@@ -124,7 +124,7 @@ class Build {
 
         switch (this.os) {
             case "win32":
-                sed = '"tools/sed.exe"';
+                sed = 'tools/sed.exe';
                 break;
             default:
                 sed = "LC_ALL=C sed";
