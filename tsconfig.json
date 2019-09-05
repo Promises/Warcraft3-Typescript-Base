@@ -13,11 +13,13 @@
 			"lua-types/core/string",
 			"lua-types/core/table",
 			"lua-types/core/debug",
-			"lua-types/special/5.3",
+			"lua-types/core/io",
+			"lua-types/core/os",
+			"lua-types/special/5.3"
 		]
 	},
 	"tstl": {
 		"luaTarget": "5.3",
-		"luaLibImport": "inline"
+		"luaLibImport": "require"
 	}
 }
